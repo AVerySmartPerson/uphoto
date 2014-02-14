@@ -1,1 +1,1 @@
-An image serving system developed for a Virtualization course test
+An image serving system developed for a Virtualization course
