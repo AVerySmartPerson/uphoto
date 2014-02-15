@@ -11,6 +11,7 @@
 * @date 15/2/2014
 */
 
+// Error messages corresponding with PHP file upload error codes.
 $error_messages = array(
    1 => "Your image is larger than the maximum size", 
    2 => "Your image is larger than the maximum size", 
@@ -18,6 +19,7 @@ $error_messages = array(
    4 => "You didn't upload an image"
 );
 
+// Total number of images successfully uploaded.
 $number_images_uploaded = 0;
 
 foreach ($_FILES as $file) {
