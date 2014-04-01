@@ -81,30 +81,8 @@ mt_srand($seed);
 						// Removes the image ID just chosen from the list of image IDs so that the same image can't be displayed twice.
 						array_splice($image_ids, $index, 1);
 
-						echo "<a data-toggle='modal' href='#myModal' class='thumbnail'><img src='thumbnail.php?id=$image_id'></a>";
+						echo "<a href='view.php?id=$image_id' class='thumbnail'><img src='thumbnail.php?id=$image_id'></a>";
 						echo "&nbsp;";
-					?>
-					
-					<!-- Modal -->
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-						  <div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">View Image</h4>
-						  </div>
-						  <div class="modal-body">
-							<img src="view.php?id=<?php echo $image_id; ?>">
-						  </div>
-						  <div class="modal-footer">
-							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-						  </div>
-						</div>
-					  </div>
-					</div>
-
-					<?php
-
 					}
 					echo "</div>";
 				}
